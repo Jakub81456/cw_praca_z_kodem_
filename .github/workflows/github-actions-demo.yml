@@ -2,9 +2,9 @@ name: Github actions demo
 on: [push]
 jobs:
   version:
-  runs-on: ubuntu-latest
-  stps:
-    - run: python --version
+    runs-on: ubuntu-latest
+    steps:
+      - run: python --version
   lint:
     runs-on: ubuntu-latest
     steps:
