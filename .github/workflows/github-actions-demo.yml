@@ -1,15 +1,15 @@
 name: Github actions demo
 on: [push]
 jobs:
- version:
-  runs-on: ubuntu-latest
-  steps:
-   - run: python --version
- lint:
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v3
-  - name: instalacja depow
-  run: pip install -r requrements.txt
-  - name: Pylint
-  run: pylint --exit-zero app.py
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: python --version
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: instalacja depow
+      run: pip install -r requrements.txt
+    - name: Pylint
+      run: pylint --exit-zero app.py
